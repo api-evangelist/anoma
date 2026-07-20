@@ -1,0 +1,20 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.anoma.net/api-clients
+docs: https://docs.anoma.net/key-management
+summary:
+  types: [none]
+  api_key_in: []
+  oauth2_flows: []
+  notes: >-
+    Anoma's App SDK API clients do not use traditional API-key or OAuth
+    authentication. Clients are constructed with a service URL. On-chain identity
+    and access are handled through cryptographic key management: the IndexerClient
+    registers discovery keypairs (addKeys) and transactions are proven and settled
+    via the Anoma Resource Machine rather than authenticated with bearer tokens.
+schemes:
+- name: discovery-keypair
+  type: cryptographic
+  scheme: keypair-registration
+  operation: IndexerClient.addKeys
+  sources: [docs.anoma.net/api-clients, docs.anoma.net/key-management]
