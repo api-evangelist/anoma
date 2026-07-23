@@ -1,0 +1,17 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.npmjs.com/package/@anomaorg/anoma-app-sdk
+packages:
+- language: javascript
+  registry: npm
+  name: "@anomaorg/anoma-app-sdk"
+  version: 0.13.1
+  url: https://www.npmjs.com/package/@anomaorg/anoma-app-sdk
+  install: npm install @anomaorg/anoma-app-sdk
+  official: true
+  description: >-
+    TypeScript SDK for the Anoma Pay protocol, backed by a Rust WebAssembly
+    library. Contains domain logic, typed HTTP API clients (TransferBackendClient,
+    IndexerClient, EnvioClient, FeedbackClient), WASM bindings, and utilities
+    shared across Anoma Pay applications.
+  source_code: https://github.com/anoma/anoma-app-sdk

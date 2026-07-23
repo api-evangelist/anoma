@@ -1,0 +1,42 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.anoma.net/api-clients
+summary: >-
+  Anoma exposes its backend surface through typed HTTP API clients shipped in the
+  @anomaorg/anoma-app-sdk package rather than a single published REST base URL.
+  Each client extends a base ApiClient class, is instantiated with a service URL,
+  and throws typed ResponseError exceptions on failure.
+authentication:
+  style: no-api-key
+  notes: >-
+    Clients are instantiated with service URLs rather than API keys. The
+    IndexerClient registers discovery keypairs (addKeys) instead of using bearer
+    tokens or API keys.
+clients:
+- name: TransferBackendClient
+  purpose: Transaction submission and proving
+  operations: [transfer, transactionStatus, estimateFee, tokenPrice, tokenBalances, statsQueue]
+- name: IndexerClient
+  purpose: Encrypted resource payloads tracked on-chain
+  operations: [addKeys, resources, config]
+- name: EnvioClient
+  purpose: GraphQL queries for public nullifier records
+  transport: graphql
+  operations: [publicNullifiers]
+- name: FeedbackClient
+  purpose: User feedback collection
+error_envelope:
+  style: typed-exception
+  type: ResponseError
+  notes: All clients extend a base ApiClient and raise typed ResponseError exceptions.
+idempotency:
+  supported: false
+  notes: No idempotency-key header or contract is documented.
+pagination:
+  documented: false
+versioning:
+  scheme: semver
+  surface: npm package (@anomaorg/anoma-app-sdk)
+cross_links:
+  authentication: authentication/anoma-authentication.yml
+  packages: packages/anoma-packages.yml

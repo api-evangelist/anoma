@@ -1,8 +1,29 @@
 aid: anoma
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anoma.png
 name: Anoma
-description: 'Anoma is a company surfaced as a portfolio company of electric-capital, polychain and added
-  to the API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Anoma is a distributed operating system that abstracts blockchain complexity
+  into a single intent-centric interface, letting developers build applications
+  once and run them across any chain. It introduces generalized intents for
+  improved UX, programmable and compliance-ready privacy, and the Anoma Resource
+  Machine (ARM) for native intents, interoperability, and scaling. Anoma ships the
+  TypeScript Anoma App SDK (@anomaorg/anoma-app-sdk) with typed HTTP API clients
+  for transfers, on-chain resource indexing, and public-nullifier queries that
+  power Anoma Pay and related privacy applications. Originally added to the API
+  Evangelist network as a portfolio-lead stub, this profile has been enriched from
+  Anoma's public developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/anoma/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -17,6 +38,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Infrastructure
+- Blockchain
+- Intents
+- Privacy
+- SDK
+- Web3
+- Decentralized
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +53,39 @@ maintainers:
 common:
 - type: Website
   url: https://anoma.net/
+- type: DeveloperPortal
+  url: https://docs.anoma.net
+- type: Documentation
+  url: https://docs.anoma.net
+- type: APIReference
+  url: https://docs.anoma.net/api-clients
+- type: GettingStarted
+  url: https://docs.anoma.net/getting-started
+- type: GitHubOrganization
+  url: https://github.com/anoma
+- type: Blog
+  url: https://anoma.net/blog
+- type: Roadmap
+  url: https://anoma.net/roadmap
+- type: Support
+  name: Discord Community
+  url: https://discord.com/invite/anoma
+- type: Whitepaper
+  url: https://github.com/anoma/whitepaper/blob/main/whitepaper.pdf
+- type: SDKs
+  url: packages/anoma-packages.yml
+- type: Packages
+  url: packages/anoma-packages.yml
+- type: Authentication
+  url: authentication/anoma-authentication.yml
+- type: Conventions
+  url: conventions/anoma-conventions.yml
+- type: DomainSecurity
+  url: security/anoma-domain-security.yml
+- type: LLMsTxt
+  url: llms/anoma-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

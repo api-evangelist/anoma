@@ -1,0 +1,33 @@
+# Anoma
+
+> Anoma is a distributed operating system that abstracts blockchain complexity into a single intent-centric interface, letting developers build applications once and run them across any chain. It offers generalized intents for improved UX, programmable and compliance-ready privacy, and the Anoma Resource Machine (ARM) for native intents, interoperability, and scaling.
+
+## Developer
+- [Docs Portal](https://docs.anoma.net): Developer documentation home
+- [Getting Started](https://docs.anoma.net/getting-started): First steps building on Anoma
+- [SDK Overview](https://docs.anoma.net/sdk-overview): The Anoma App SDK
+- [API Clients](https://docs.anoma.net/api-clients): Typed HTTP API clients (TransferBackend, Indexer, Envio, Feedback)
+- [Key Management](https://docs.anoma.net/key-management): Cryptographic key handling
+- [Build a Simple App](https://docs.anoma.net/build-simple-app): End-to-end walkthrough
+- [Best Practices](https://docs.anoma.net/best-practices): Recommended patterns
+
+## Packages
+- [@anomaorg/anoma-app-sdk (npm)](https://www.npmjs.com/package/@anomaorg/anoma-app-sdk): TypeScript SDK for the Anoma Pay protocol, backed by a Rust WebAssembly library
+
+## Source
+- [GitHub Organization](https://github.com/anoma): Reference implementation and libraries
+- [anoma (Elixir)](https://github.com/anoma/anoma): Reference implementation of Anoma
+- [anoma-app-sdk (TypeScript)](https://github.com/anoma/anoma-app-sdk): App SDK source
+- [Whitepaper (PDF)](https://github.com/anoma/whitepaper/blob/main/whitepaper.pdf): Protocol whitepaper
+
+## Applications
+- [AnomaPay](https://anomapay.app): Private payments
+- [Anoma Portal](https://portal.anoma.net): Governance and asset management
+- [Anoma Explorer](https://explorer.anoma.net): Transaction explorer
+
+## Community
+- [Blog](https://anoma.net/blog)
+- [Roadmap](https://anoma.net/roadmap)
+- [Discord](https://discord.com/invite/anoma)
+- [Research Forum](https://research.anoma.net/)
+- [YouTube](https://www.youtube.com/@anoma)
